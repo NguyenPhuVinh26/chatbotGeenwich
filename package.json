@@ -1,0 +1,30 @@
+{
+  "name": "chatbotgw",
+  "version": "1.0.0",
+  "description": "chatbotGW",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node src/server.js"
+  },
+  "author": "\"vinhnguyen\"",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.19.1",
+    "@babel/node": "^7.19.1",
+    "@babel/preset-env": "^7.19.1",
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.2",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "google-spreadsheet": "^3.3.0",
+    "moment": "^2.29.4",
+    "mysql2": "2.3.3",
+    "nodemon": "^2.0.20",
+    "request": "^2.88.2",
+    "sequelize": "^6.29.3",
+    "sequelize-cli": "6.3.0",
+    "pg": "8.7.1",
+    "pg-hstore": "2.3.4"
+  }
+}

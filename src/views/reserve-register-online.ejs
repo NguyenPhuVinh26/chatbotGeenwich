@@ -1,0 +1,108 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        let senderId = "<%= senderId %>"
+    </script>
+
+    <title>Admission to Greenwich University</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Load custom Javascript and CSS-->
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/reserve-register-online.js"></script>
+
+</head>
+
+<body>
+    <div class="container fix-height">
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center mt-3">
+                    <span class="title">Student information</span>
+                </div>
+                <input type="text" id="psid" hidden>
+                <div class="form-group">
+                    <label for="customerName">Full name:</label>
+                    <input type="text" id="customerName" class="form-control "
+                        placeholder="First name and last name...">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address (<span style="color: red">*</span>):</label>
+                    <input type="email" id="email" class="form-control" placeholder="Email address...">
+                    <div class="invalid-feedback">The email address is not valid.</div>
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Number phone (<span style="color: red">*</span>):</label>
+                    <input type="text" id="phoneNumber" class="form-control" placeholder="Number phone...">
+                    <div class="invalid-feedback">Invalid phone number.</div>
+
+                    <div class="form-group">
+                        <label for="addressCustomer">Address:</label>
+                        <input type="text" id="addressCustomer" class="form-control " placeholder="Address...">
+                    </div>
+
+
+                    <div class="form-group">
+                        <!-- <div class="ladi-form-item-background"></div> -->
+                        <!-- <input type="chuyennganh" id="chuyennganh"> -->
+                        <div class="ladi-form-item"><select tabindex="6" name="Course" required=""
+                                class="ladi-form-control ladi-form-control-select" data-selected="">
+                                <option value="">Major</option>
+                                <option id="InformationTechnology">Information Technology</option>
+                                <option id="GraphicDesign">Graphic Design</option>
+                                <option id="BusinessAdministration">Business Administration</option>
+                                <option id="Marketingmanager">Marketing manager</option>
+                                <option id="MediaManagemnt">Media Managemnt</option>
+                                <option id="EventManagement">Event Management</option>
+                                <option id="InternationalBusiness">International Business</option>
+                            </select></div>
+                    </div>
+
+                    <div class="form-group">
+                        <!-- <div class="ladi-form-item-background"></div> -->
+                        <!-- <input type="chuyennganh" id="chuyennganh"> -->
+                        <div class="ladi-form-item"><select tabindex="6" name="Course" required=""
+                                class="ladi-form-control ladi-form-control-select" data-selected="">
+                                <option value="">Where to register for admission</option>
+                                <option id="HaNoi">Ha Noi</option>
+                                <option id="HoChiMinh">Ho Chi Minh</option>
+                                <option id="DaNang">Da Nang</option>
+                                <option id="CanTho">Can Tho</option>
+                            </select></div>
+                    </div>
+
+                    <button class="btn btn-primary" id="btnReserveTable"> Done </button>
+                </div>
+            </div>
+
+        </div>
+        <footer>
+            <div class="text-center">
+                <div class="">
+                    <span class="mr-3"> &copy; <a title="Create by V"
+                            href="https://www.youtube.com/playlist?list=PLncHg6Kn2JT6oBfsbNTYHWJNkjF3tNpp4"
+                            target="_blank">Chatbot Tutorial</a></span>
+                    <span class="ml-3">
+                        Created by <a href="https://www.youtube.com/channel/UCVkBcokjObNZiXavfAE1-fA?sub_confirmation=1"
+                            title="View V" target="_blank">NPV</a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
